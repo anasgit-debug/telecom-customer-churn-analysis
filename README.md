@@ -1,2 +1,73 @@
-# telecom-customer-churn-analysis
-End-to-end telecom customer churn analysis using SQL Server, Power BI, DAX, Power Query, and Excel to identify churn patterns and retention opportunities.
+# Telecom Customer Churn & Retention Analysis
+
+## Problem Statement
+
+Customer churn is an important business problem for telecommunications companies because losing customers can affect customer retention and long-term revenue.
+
+This project analyses customer data to identify patterns associated with churn. It examines contract types, payment methods, internet services, customer tenure, and selected service features.
+
+The objective is to help a business identify customer groups that may warrant further investigation and develop evidence-based retention recommendations.
+
+## Dataset
+
+- **Source:** [Telco Customer Churn — Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+- **Records:** 7,043 customers
+- **Target field:** Churn
+- **Data domains:** Customer demographics, account information, contract details, services, charges, and churn status
+
+## Tools Used
+
+- **SQL Server:** Data profiling, data-quality checks, and analytical queries
+- **Power Query:** Data types and data preparation
+- **Power BI:** Data modelling and interactive dashboards
+- **DAX:** Measures and calculated columns
+- **Excel:** Independent validation of results
+
+## Steps Followed
+
+1. Imported the dataset into SQL Server staging.
+2. Profiled customer records and checked for duplicate IDs, missing identifiers, invalid values, and service inconsistencies.
+3. Investigated missing values in `TotalCharges`.
+4. Preserved 11 missing `TotalCharges` values rather than replacing them with invented amounts.
+5. Connected Power BI to SQL Server and checked data types and data quality in Power Query.
+6. Created DAX measures for total customers, churned customers, churn rate, and retention rate.
+7. Developed an interactive report covering overall churn, contract types, payment methods, internet services, tenure groups, and priority customer segments.
+8. Compared key Power BI results with SQL calculations to validate the findings.
+
+## Key Findings
+
+- **Overall churn rate:** 26.54% (1,869 of 7,043 customers).
+- **Month-to-month contracts:** 42.71% churn rate.
+- **One-year contracts:** 11.27% churn rate.
+- **Two-year contracts:** 2.83% churn rate.
+- **Electronic-check customers:** 45.29% churn rate.
+- **Fiber-optic customers:** 41.89% churn rate.
+- **Customers with 0–12 months of tenure:** 47.44% churn rate.
+
+### Priority Segment
+
+Month-to-month customers with 12 months or less of tenure and no online security:
+
+- Customers in segment: 1,370
+- Churned customers: 845
+- Segment churn rate: 61.68%
+- Share of all churned customers: 45.21%
+
+## Business Recommendations
+
+- Investigate onboarding and early customer experiences.
+- Review billing processes and payment-related complaints.
+- Examine service adoption, support needs, and cancellation feedback.
+- Use customer feedback and further analysis to evaluate potential retention interventions.
+
+These findings indicate associations in the dataset; they do not establish that any particular factor causes churn.
+
+## Project Limitations
+
+- The analysis is based on the supplied dataset and its recorded customer attributes.
+- Observed relationships should not be interpreted as proof of causation.
+- Retention recommendations require further investigation and testing before their effectiveness can be established.
+
+## Dashboard
+
+Dashboard screenshots and the Power BI report file will be added to this repository as the portfolio package is finalized.
