@@ -68,6 +68,19 @@ These findings indicate associations in the dataset; they do not establish that 
 - Observed relationships should not be interpreted as proof of causation.
 - Retention recommendations require further investigation and testing before their effectiveness can be established.
 
-## Dashboard
+## Dashboard Preview
 
-Dashboard screenshots and the Power BI report file will be added to this repository as the portfolio package is finalized.
+### 1. Churn Overview
+![Telecom Customer Churn Dashboard](Power%20Bi/Telecom%20customer%20Churn%20Dashboard.png)
+
+### 2. Customer Insights
+![Telecom Customer Churn Insights](Power%20Bi/Telecom%20customer%20Churn%20Insights.png)
+
+### 3. Deeper Analysis
+![Telecom Customer Churn Deeper Analysis](Power%20Bi/Telecom%20customer%20Churn%20Deeper%20Analysis.png)
+
+## Project Files
+
+- **Power BI Report:** [Download the PBIX report](Power%20Bi/Telecom%20Customer%20Churn%20Analysis.pbix)
+- **SQL Analysis:** See the [`sql`](sql/) folder.
+- **Power BI Screenshots:** See the [`Power Bi`](Power%20Bi/) folder.
