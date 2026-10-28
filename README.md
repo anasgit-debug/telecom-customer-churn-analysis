@@ -34,6 +34,19 @@ The objective is to help a business identify customer groups that may warrant fu
 7. Developed an interactive report covering overall churn, contract types, payment methods, internet services, tenure groups, and priority customer segments.
 8. Compared key Power BI results with SQL calculations to validate the findings.
 
+## Data Quality and Validation
+
+Before analysing churn, I profiled the dataset in SQL Server to check data completeness, uniqueness, valid ranges, and consistency.
+
+- **Dataset size:** 7,043 customer records.
+- **Customer IDs:** No duplicate or blank customer IDs were found.
+- **Missing values:** 11 records had missing `TotalCharges` values. These records had a tenure of 0 months and were retained as missing rather than replaced with assumed values.
+- **Numeric validation:** Checked tenure and monthly charges for invalid values.
+- **Service consistency:** Checked whether internet-related service values aligned with `InternetService`, and whether `MultipleLines` values aligned with `PhoneService`.
+- **Cross-tool validation:** Compared key churn metrics from SQL Server with Power BI measures to verify consistency.
+
+These checks helped establish a reliable basis for the churn analysis.
+
 ## Key Findings
 
 - **Overall churn rate:** 26.54% (1,869 of 7,043 customers).
