@@ -8,6 +8,20 @@ This project analyses customer data to identify patterns associated with churn. 
 
 The objective is to help a business identify customer groups that may warrant further investigation and develop evidence-based retention recommendations.
 
+## Business Questions
+
+This project investigates the following questions:
+
+1. What percentage of customers have churned?
+2. How does churn vary across month-to-month, one-year, and two-year contracts?
+3. Which payment methods are associated with higher churn rates?
+4. How does churn differ between fiber optic, DSL, and customers without internet service?
+5. How does customer tenure relate to churn?
+6. Which combination of customer characteristics identifies a high-priority retention segment?
+7. How can these findings inform customer onboarding and retention strategies?
+
+The analysis focuses on identifying patterns and potential areas for further investigation. The observed relationships do not establish causation.
+
 ## Dataset
 
 - **Source:** [Telco Customer Churn — Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
